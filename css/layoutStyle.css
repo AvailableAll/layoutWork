@@ -1,0 +1,73 @@
+*{	/*初始页面*/
+	margin: 0 auto;
+	padding: 0;
+}
+img{
+	width: 200px;
+	height: 150px;
+}
+#tip{
+	height: 40px;
+	font-size: 30px;
+	text-align: center;	/*居中文字*/
+	margin-top: 20px;
+}
+.box{
+	width: 200px;
+	height: 150px;
+	float: left;
+	margin-left: 50px;
+	transition: all 0.4s;	/*过度时间*/
+}
+.box:nth-child(5){
+	margin-top: 50px;	
+}
+.box:nth-child(4){
+	margin-left: 150px;
+	margin-top: 50px;	
+}
+.box:hover{
+	box-shadow: 0 8px 8px 0 grey;     /*设置盒子阴影*/
+	transform: translate(0,-10px);	 /*鼠标悬浮时box向上浮动的距离*/
+}
+#main{
+	width: 800px;
+	height: 500px;
+	margin-top: 100px;
+	position: relative;	/*设置相对定位*/
+}
+#bg{
+	width: 700px;
+	height: 500px;
+	background-color: cornflowerblue;
+}
+div.sideLeft,div.sideRight{
+	width: 120px;
+	height: 500px;
+	margin: 0 50px;
+	background-color: #00C8FF;
+}
+.sideLeft{
+	float: left;
+}
+.sideRight{
+	float: right;
+}
+div.top1,div.buttom{
+	width: 700px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;	/*绝对定位*/
+	left: 50px;
+}
+.buttom{
+	top: 400px;
+}
+.top2{
+	width: 700px;
+	height: 70px;
+	background-color: darkblue;
+	position: absolute;	/*绝对定位*/
+	top: 100px;
+	left: 50px;
+}
